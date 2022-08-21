@@ -6,14 +6,16 @@
 </head>
 <body>
 
-<input type="text">
-<button>Add to list</button>
+<style>
+    li.done {
+        text-decoration: line-through;
+    }
+</style>
 
-<ul id="list">
-    <li>First</li>
-    <li>Second</li>
-    <li>Next</li>
-</ul>
+<input type="text" id="todoInput">
+<button onclick="addToList()">Add to list</button>
+
+<ul id="list"></ul>
 
 <script src="script.js"></script>
 
